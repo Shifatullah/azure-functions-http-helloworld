@@ -9,9 +9,9 @@ using Newtonsoft.Json;
 
 namespace AzureFunctionsHttpHelloWorld
 {
-    public static class Function1
+    public static class HelloFunction
     {
-        [FunctionName("Function1")]
+        [FunctionName("Hello")]
         public static IActionResult Run([HttpTrigger(AuthorizationLevel.Anonymous, "get", "post", Route = null)]HttpRequest req, TraceWriter log)
         {
             log.Info("C# HTTP trigger function processed a request.");
